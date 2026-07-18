@@ -2,7 +2,7 @@ import { RACINE_DATA } from '../data/racineData';
 
 export function Archive() {
   return (
-    <section className="parallax-section relative flex h-screen w-screen flex-shrink-0 items-center justify-center border-r border-zinc-800 px-8 lg:px-24">
+    <section className="parallax-section relative flex h-screen w-screen flex-shrink-0 items-center overflow-y-auto overflow-x-hidden  justify-center border-r border-zinc-800 px-8 lg:px-24">
       <div className="flex h-full w-full flex-col justify-center gap-12">
         <header>
           <h2 className="text-4xl font-bold uppercase tracking-widest text-white">The Archive</h2>
@@ -18,7 +18,11 @@ export function Archive() {
             >
               {/* Image Placeholder */}
               <div className="absolute inset-0 flex items-center justify-center bg-zinc-800 text-zinc-700">
-                [Image: {item.imageId}]
+                <img
+                  src={item.imagePath}
+                  alt={`${item.client} - ${item.context}`}
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
               </div>
               
               {/* Overlay Content */}

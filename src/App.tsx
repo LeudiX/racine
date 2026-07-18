@@ -1,11 +1,13 @@
 import { ParallaxLayout } from './layouts/ParallaxLayout';
 import { Hero } from './sections/Hero';
+import { StudioShowcase } from './sections/StudioShowcase';
 import { Archive } from './sections/Archive';
 
 function App() {
   return (
     <ParallaxLayout>
       <Hero />
+      <StudioShowcase />
       <Archive />
 
       {/* Temporary placeholders for the next sections to ensure the scroll length is correct */}

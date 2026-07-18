@@ -2,7 +2,7 @@ import { RACINE_DATA } from '../data/racineData';
 
 export function Hero() {
     return (
-        <section className="parallax-section relative flex h-screen w-screen flex-shrink-0 flex-col items-center justify-center border-r border-zinc-800 px-8 lg:px-24">
+        <section className="parallax-section relative flex h-screen w-screen flex-shrink-0 flex-col items-center overflow-y-auto overflow-x-hidden justify-center border-r border-zinc-800 px-8 lg:px-24">
             {/* Background Parallax Layer Placeholder */}
             <div className="absolute inset-0 z-0 opacity-20" style={{ backgroundImage: 'radial-gradient(circle, #333 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
 

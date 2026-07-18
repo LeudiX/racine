@@ -1,14 +1,33 @@
+import swae_lee from '../assets/artists/swae_lee.webp';
+import lil_nas from '../assets/artists/lil_nas.webp';
+import matt_ox from '../assets/artists/mattox.webp';
+import dorian_electra from '../assets/artists/dorian_electra.webp';
+import canada_skating_01 from '../assets/video/canada_skating_01.mp4';
+import canada_skating_02 from '../assets/video/canada_skating_02.mp4';
+
 export const RACINE_DATA = {
     brand: {
         name: "RACINE",
         tagline: "Multidisciplinary studio specializing in biomechanical wearable objects and sculptures.",
         description: "Merging traditional leatherwork with advanced 3D printing and CNC technology. Racine creates modular, extreme silhouettes inspired by cosmic archetypes and psychedelic iconography, functioning as a bridge between the metaphysical and the material." //[cite: 3]
     },
+    showcase: {
+        title: "Process & Engineering",
+        description: "A look inside the Montreal manufacturing facility where traditional techniques meet advanced CNC mapping. Every piece functions as a bridge between the metaphysical and the material.", //[cite: 3]
+        media: [
+            {
+                id: "process-video-1",
+                type: "video",
+                urlDesktop: canada_skating_01,
+                urlMobile: canada_skating_02,
+            }
+        ]
+    },
     placements: [
-        { client: "Swae Lee", context: "Coachella", imageId: "swae-lee" }, //[cite: 3]
-        { client: "Lil Nas X", context: "The Eric Andre Show", imageId: "lil-nas-x" }, //[cite: 3]
-        { client: "Matt Ox", context: "Editorial", imageId: "matt-ox" }, //[cite: 3]
-        { client: "Dorian Electra", context: "Paper Mag", imageId: "dorian" } //[cite: 3]
+        { client: "Swae Lee", context: "Coachella", imageId: "swae-lee", imagePath: swae_lee }, //[cite: 3]
+        { client: "Lil Nas X", context: "The Eric Andre Show", imageId: "lil-nas-x", imagePath: lil_nas }, //[cite: 3]
+        { client: "Matt Ox", context: "Editorial", imageId: "matt-ox", imagePath: matt_ox }, //[cite: 3]
+        { client: "Dorian Electra", context: "Paper Mag", imageId: "dorian", imagePath: dorian_electra } //[cite: 3]
     ],
     products: [
         {
