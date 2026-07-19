@@ -110,7 +110,7 @@ export function StudioShowcase() {
                   {/* Custom Volume Controller */}
                   <button
                     onClick={toggleMute}
-                    className="absolute bottom-4 right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/60 text-white backdrop-blur-md transition-colors hover:bg-zinc-800"
+                    className="absolute cursor-pointer bottom-4 right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/60 text-white backdrop-blur-md transition-colors hover:bg-zinc-800"
                     aria-label="Toggle Volume"
                   >
                     {isMuted ? <VolumeX size={18} /> : <Volume2 size={18} />}
